@@ -18,7 +18,7 @@
   },
   "private": true,
   "version": "1.0.0",
-  "main": "JS/index.js",
+  "main": "Webapp/functions/index.js",
   "devDependencies": {},
   "keywords": [],
   "author": "",
