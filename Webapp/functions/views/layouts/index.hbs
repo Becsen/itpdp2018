@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="css" href="/public/style/main.css" />        
+        <title>Aion WebApp</title>
+    </head>
+    <body>
+        <div id="topBar" class="Bar">
+            <button id="topButton">+</button>
+        </div>
+        <div id="bottomBar" class="Bar">
+            <div id="bottomLeft"></div>
+             <button id="iDag"> I Dag</button>
+            <div id="bottomRight"></div>
+            <button id="måned"> April</button>
+        </div>
+        <!-- Styling -->
+        <style type="text/css" rel="stylesheet">
+            body {
+                display: grid;
+                grid-template-columns: 5% 90% 5%;
+                grid-template-rows: 25px 575px 25px; /*skal ændres til procent, men fucker det op..*/
+            }
+            
+            .Bar {
+              display: grid;
+                grid-column: 1/4;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(230, 230, 230);  
+            }
+            .button {
+                text-align: center;
+            }
+            #topBar {
+                grid-row: 1;
+            }
+
+            #topButton {
+                grid-column: 1/4;
+                grid-row: 1/4;
+                background-color: rgb(228, 228, 228);
+                color: white;
+            }
+
+            #bottomBar {
+                grid-row: 3;
+            }
+
+            #måned {
+                grid-column: 3/4;
+                grid-row: 1/4;
+                background-color: rgb(0, 180, 204);
+                color: white;
+            }
+            #iDag {
+                grid-column: 1/2;
+                grid-row: 1/4;
+                background-color: rgb(0, 126, 143);
+                color: white;
+            }
+        </style>
+        <!-- Styling ends -->
+
+        {{{body}}}
+
+      <!-- Firebase config/ init -->
+      <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDEgCk9vRXw0f1rjCQU4vUN4vekX1-pSIU",
+          authDomain: "aion-2-0.firebaseapp.com",
+          databaseURL: "https://aion-2-0.firebaseio.com",
+          projectId: "aion-2-0",
+          storageBucket: "",
+          messagingSenderId: "825270314758"
+        };
+        firebase.initializeApp(config);
+        </script> 
+        
+        <!-- Aion scripts      
+        <script type="javascript" src="../../index.js"></script>
+        <script type="javascript" src="../../main.js"></script>  -->
+    </body>
+</html>

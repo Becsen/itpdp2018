@@ -1,0 +1,24 @@
+{
+  "name": "aion",
+  "version": "1.0.0",
+  "description": "itpdp2018",
+  "main": "functions/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gruppe 4",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "firebase": "^4.12.1",
+    "handlebars": "^4.0.11"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "itpdp2018"
+  },
+  "keywords": []
+}
